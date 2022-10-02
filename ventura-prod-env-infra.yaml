@@ -818,5 +818,13 @@ Resources:
         Value: venturaproddb
     DeletionPolicy: Snapshot
 
+  cloudformationcicds3bucket1:
+    Type: AWS::S3::Bucket
+    Properties: 
+      BucketName: jjtechbucket
+      Tags:
+        - Key: Name
+          Value: cicd logs
+
 
 Outputs: {}
